@@ -1,0 +1,11 @@
+numpy
+opencv-python
+tensorflow==1.14.0
+keras==2.2.5
+Flask
+flask-cors
+scikit-learn==0.22.1
+imutils
+Pillow
+mtcnn
+scikit-video == 1.1.11
