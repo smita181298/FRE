@@ -1,0 +1,32 @@
+<html> 
+<body> 
+<div style="text-align:center">
+	<form style="float: right">
+          <input style="height:30px;font-size:15pt;" type="submit" value="back" formaction="http://localhost:4001/">
+         </form>
+<video width="600" controls>
+
+               
+                    	<source src={{videoname}} type="video/mp4">
+  
+           
+  
+  Your browser does not support HTML video.
+</video>
+</div>
+<h2 style="text-align:center">{{heading}}</h2>
+<div  style="text-align:center">
+{% if results %}
+
+            {% for img_name in results %}
+               
+                    	<img src={{img_name}} alt="{{ img_name }}">
+  
+            {% endfor %}
+           {% endif %} 
+   
+</div>
+
+
+</body> 
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ciphense</title>
+</head>
+<h3>{{heading}}</h3>
+<body>
+    {% if results %}
+
+            <div>
+            {% for img_name in results %}
+ 
+                    	<img src={{img_name}} alt="{{ img_name }}">
+
+            {% endfor %}
+        </div>
+
+    {% endif %}
+    <form >
+          <input style="height:30px;font-size:15pt;" type="submit" value="back" formaction="http://localhost:4001/">
+         </form>
+</body>
+</html>

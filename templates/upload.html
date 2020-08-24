@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+  
+   body {
+ background-image: url("static/images1/6.jpg");
+ background-color: black;
+}
+h2{
+  border-left: 6px solid red;
+  border-width: 20px;
+  border-color: white;
+}
+
+    
+</style>
+   		 <body >
+        <h1 style="color:white;font-size:100px; text-align: center;">FACE RECOGNITION</h1>
+      <form id= "imageUploadForm"   role="form" method = "POST" 
+         enctype = "multipart/form-data">
+         <div style="text-align: center;">
+        <input style="height:200px;font-size:20pt; color:black;" type="file" id="fileup" name="files" multiple="multiple"/>
+        <label style="color:white;font-size:15pt;"for="lname">personID</label>
+         <input type = "text" name = "personID" />
+         </div>
+          <div style="text-align: center;">
+
+         <input style="height:30px;font-size:15pt;" value="extractface" type = "submit" formaction="http://localhost:4001/extractfaces"/>
+
+         <input style="height:30px;font-size:15pt;" type="submit" value="countfaces" formaction="http://localhost:4001/countfaces">
+
+         <input style="height:30px;font-size:15pt;" type="submit" value="addFace" formaction="http://localhost:4001/addface">
+         <input style="height:30px;font-size:15pt;" type="submit" value="recognize" formaction="http://localhost:4001/recognize">
+         <input style="height:30px;font-size:15pt;" type="submit" value="removeencodings" formaction="http://localhost:4001/removeencodings">
+         <input style="height:30px;font-size:15pt;" type="submit" value="webcam" formaction="http://localhost:4001/webcam">
+         <input style="height:30px;font-size:15pt;" type="submit" value="getallencodings" formaction="http://localhost:4001/getAllFaceEncodings">
+         <input style="height:30px;font-size:15pt;" type="submit" value="removePersonID" formaction="http://localhost:4001/removePersonID">
+        </div>
+      </form> 
+      <div id="uploadResponse"></div>
+
+
+      <form action = "http://localhost:4001/clearAllData"  method = "GET">
+      <input style="float:right;"type="submit" value="clearData" >
+      </form>
+ 
+  
+<div id="uploadResponse"></div>
+ 
+
+
+
+ 
+ </body>
+</html>

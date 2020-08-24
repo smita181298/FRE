@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ciphense</title>
+</head>
+<h2 style="text-align:center">{{heading}}</h2>
+
+<body style="text-align:center">
+    
+    {% if results %}
+
+            <div>
+            {% for img_name in results %}
+ 
+                    	<img src={{img_name}} alt="{{ img_name }}">
+
+            {% endfor %}
+        </div>
+
+    {% endif %}
+</body>
+
+<h3 style="text-align:center">{{encodings}}</h3>
+<form >
+          <input style="height:30px;font-size:15pt;" type="submit" value="back" formaction="http://localhost:4001/">
+         </form>
+</html>
